@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1>Contacts DataBase</h1>
+      <div class="row-search">
+        <label for="searchInput">Search:
+          <input type="text" id="searchInput" placeholder="search names...">
+        </label>
+        
+      </div>
+      <div class="row">
+        <h1 class="row-head">Enter Details:</h1>
+        <input id="nameInput" placeholder="fullName">
+        <input id="phoneInput" type="number" placeholder="phoneNumber">
+        <button id="addBtn"> Add Contact</button>
+      </div>
+
+      
+      <table>
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Phone
+                </th>
+            </tr>
+        </thead>
+        <tbody id="contactTableBody">
+          
+        </tbody>
+      </table>
+      <div id="counts" class="counts"></div>
+  </div>
+      
+    <script src="script.js"></script>
+</body>
+</html>
